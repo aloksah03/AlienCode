@@ -1,0 +1,119 @@
+/* Lesson content styling */
+.prose-lesson h4 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(185 100% 70%);
+  margin: 1rem 0 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.prose-lesson p {
+  color: hsl(220 10% 75%);
+  margin-bottom: 0.75rem;
+  line-height: 1.75;
+}
+
+.prose-lesson ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.75rem;
+}
+
+.prose-lesson ul li {
+  color: hsl(220 10% 70%);
+  padding: 0.2rem 0 0.2rem 1.25rem;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.prose-lesson ul li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: hsl(185 100% 50%);
+  font-weight: 700;
+}
+
+.prose-lesson ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-lesson ol li {
+  color: hsl(220 10% 70%);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose-lesson code {
+  background: hsl(220 80% 8%);
+  border: 1px solid hsl(185 100% 30% / 0.3);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  color: hsl(185 100% 70%);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+}
+
+.prose-lesson strong {
+  color: hsl(185 100% 80%);
+  font-weight: 600;
+}
+
+/* Custom range input */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: hsl(220 60% 15%);
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: hsl(185 100% 50%);
+  cursor: pointer;
+  box-shadow: 0 0 8px hsl(185 100% 50% / 0.5);
+}
+
+/* Table in markdown */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th {
+  background: hsl(220 60% 8%);
+  color: hsl(185 100% 70%);
+  font-family: 'Orbitron', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid hsl(185 100% 30% / 0.3);
+}
+
+td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid hsl(220 60% 10%);
+}
+
+/* Neon hr */
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, hsl(185 100% 50% / 0.4), transparent);
+  margin: 1.5rem 0;
+}
+
+/* Focus ring for accessibility */
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid hsl(185 100% 50%);
+  outline-offset: 2px;
+}
