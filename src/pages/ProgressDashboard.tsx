@@ -4,6 +4,7 @@ import { useProgress } from "@/hooks/useProgress";
 import { useAuth } from "@/hooks/useAuth";
 import { COURSES } from "@/constants/courses";
 import ParticleBackground from "@/components/features/ParticleBackground";
+import { DashboardSections } from "@/components/features/DashboardSections";
 
 // ── Load game data from localStorage ──
 function loadPuzzleProgress(): Record<number, { stars: number; completed: boolean }> {
@@ -573,6 +574,9 @@ export default function ProgressDashboard() {
             </Link>
           ))}
         </div>
+
+        {/* Dashboard Sections */}
+        <DashboardSections />
 
       </div>
     </div>
